@@ -19,8 +19,48 @@ body {
     width: 35vw;
     background: url(images/lisa-bresler-RE1U3B249eY-unsplash.jpg);
     background-size: cover;
-    /* background-position-x: center;    */
     height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#turtle-container {
+    height: 125px;
+    width: 35vw;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+ 
+    top: 30%;
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#turtle {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+}
+
+#theturtle {
+    color: white;
+    left: 40%;
+    position: absolute;
+    font-size: 48px;
+    text-align: center;
+}
+
+#image-thanks {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+
+    text-align: center;
+    text-shadow: 1px;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 #rhs-container {
@@ -64,8 +104,6 @@ form {
     justify-content: left;
     flex-wrap: wrap;
     width: 100%;
-
-
 }  
 
 .input-container {
@@ -100,21 +138,27 @@ input:focus {
 
 button {
     font-size: 22px;
-    background-color: white;
-    color: teal;
+
     border: 3px solid black;
     border-radius: 10px;
     font-weight: 600;
-}
-button:hover {
+
     background-color: teal;
     color: white;
+}
+button:hover {
+    background-color: white;
+    color: teal;
 }
 
 .login-container {
     display: flex;
     margin-right: 100px;
     padding: 20px;
+}
+
+.login {
+    font-weight: 600;
 }
 
 /* no quotes on hidden, however quotes are required in the JS script -_- */
