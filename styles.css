@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#full-container {
+    display: flex;
+    height: 100%;
+}
+
+#lhs-container {
+    width: 35vw;
+    background: url(images/lisa-bresler-RE1U3B249eY-unsplash.jpg);
+    background-size: cover;
+    /* background-position-x: center;    */
+    height: 100%;
+}
+
+#rhs-container {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#description-container {
+    margin-top: 100px;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+.para {
+    margin-bottom:30px;
+}
+
+.para,
+.para-bot {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.para-bot {
+    margin-top: 50px;
+}
+
+form {
+    padding: 20px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+}  
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: max(40%, 300px);
+}
+
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+input {
+    font-size: 16px;
+    padding:5px;
+    border: 2px solid lightgrey;
+    border-radius: 3px;
+    outline: none;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+#button-container {
+    display: flex;
+}
+
+button {
+    font-size: 22px;
+    background-color: white;
+    color: teal;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+button:hover {
+    background-color: teal;
+    color: white;
+}
+
+.login-container {
+    display: flex;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+/* no quotes on hidden, however quotes are required in the JS script -_- */
+#error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 600;
+    visibility: hidden;
+};
